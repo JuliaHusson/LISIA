@@ -1,0 +1,190 @@
+{
+    "intents": [
+        {
+            "tag": "salutations introduction",
+            "patterns": [ "Bonsoir", "Salut" ],
+            "responses": [ "" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "salutations fin",
+            "patterns": [ "Salut", "Je te dis aurevoir", "Salut, a plus", "Je te souhaite une bonne soirée"],
+            "responses": [ "" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "remerciements",
+            "patterns": [ "C'est très gentil, merci beaucoup", "Je tiens à te remercier encore une fois"],
+            "responses": [ "" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "sentiments",
+            "patterns": [ "Comment tu vas ?", "Comment ca va aujourd'hui ?"],
+            "responses": [ ""],
+            "context": [ "" ]
+        },
+        {
+            "tag": "actions",
+            "patterns": [ "Que fais tu ?", "Qu'est tu entrain de faire ?", "Qu'il y a t-il de neuf ?" ],
+            "responses": [ "" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "ressentis",
+            "patterns": [ "Tu as mal quelque part ?", "Tu te sens comment ?" ],
+            "responses": [ "" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "actualités",
+            "patterns": [ "Tu es au courant de l'actualité", "Tu as vu ce qu'il se passe ?" ],
+            "responses": [ "" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "journée",
+            "patterns": [ "Que fais tu aujourd'hui ?", "Quel est ton programme aujourd'hui ?"],
+            "responses": [ "" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "retours",
+            "patterns": [ "Tu en pense quoi ?", "Et toi ?" ],
+            "responses": [ "" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "rendez-vous",
+            "patterns": [ "Où vas tu aujourd'hui ?", "Qui vois tu aujourd'hui ?", "Où as-tu rendez-vous ?" ],
+            "responses": ["" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "incompréhension",
+            "patterns": [ "" ],
+            "responses": [ "" ],
+            "context": [ "" ]
+        },
+	{
+	 "tag": "Météo",
+	 "patterns": ["Tu as vu le temps d'aujourd'hui ?"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "Beau temps",
+	 "patterns": ["J'aime le soleil","Il fait beau"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "Mauvais temps",
+	 "patterns": ["Le temps n'est pas beau","Je n'aime pas quand il pleut"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "Temps chaud",
+	 "patterns": ["J'ai chaud","Le soleil est fort aujourd'hui"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "Temps froid",
+	 "patterns": ["Il fait froid dehors"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "Tempête",
+	 "patterns": ["Je n'aime pas le vent","Je n'aime pas l'orage"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "Température",
+	 "patterns": ["Tu as chaud ?","Tu as froid ?"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "Santé",
+	 "patterns": ["Comment est ta santé ?","Comment tu te sens ?"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "Fièvre",
+	 "patterns": ["J'ai de la fièvre ? ","J'ai mal à la tête ?"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "Sports",
+	 "patterns": ["J'aime le foot","J'aime le sport"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "Eau",
+	 "patterns": ["J'ai soif ?","Je veux boire ?","Je veux de l'eau ?"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "TV",
+	 "patterns": ["Je veux regarder la télé ?"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "Radio",
+	 "patterns": ["Je veux écouter la radio"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "Musique",
+	 "patterns": ["J'aime la musique"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "Informations TV",
+	 "patterns": ["Je voudrais regarder les informations"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "Lecture",
+	 "patterns": ["J'aime lire","Je regarde le journal"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "Series",
+	 "patterns": ["J'aime regarder des séries"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "Vacances",
+	 "patterns": ["Je suis en vacance"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "Lumière",
+	 "patterns": ["J'aimerai plus de lumière"],
+	 "responses": [""],
+	 "context": [""]
+	},
+	{
+	 "tag": "chauffage",
+	 "patterns": ["J'allume le chauffage"],
+	 "responses": [""],
+	 "context": [""]
+	}
+    ]
+}

@@ -1,0 +1,190 @@
+{
+    "intents": [
+        {
+            "tag": "salutations introduction",
+            "patterns": [ "Bonjour", "Salut", "Coucou", "Hey", "Hola", "Yo", "Enchanté", "Hello" ],
+            "responses": [ "Bonjour, comment vas-tu ?", "Salut", "ça va ?", "Content de faire ta connaissance" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "salutations fin",
+            "patterns": [ "Salut", "A la prochaine", "Au revoir", "A plus", "Bonne soirée", "Ciao", "Bisous", "A bientôt" ],
+            "responses": [ "A plus", "Au revoir", "Rentre bien", "Bisous", "Bonne soirée", "A bientôt" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "remerciements",
+            "patterns": [ "Merci", "Merci beaucoup", "Super, merci", "Je te remercie beaucoup", "C'est très gentil, merci", "Je tiens à te remercier", "Encore une fois merci" ],
+            "responses": [ "De rien", "Tout le plaisir était pour moi", "Avec plaisir", "Pas de problème", "Pas de soucis", "Il n'y a pas de quoi", "Je t'en prie" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "sentiments",
+            "patterns": [ "Comment tu vas ?", "Comment tu te sens aujourd'hui ?", "ça va ?", "Quoi de neuf ?" ],
+            "responses": [ "Bien", "Mal", "Super", "Bof", "Très bien", "Pas terrible", "Fatigué", "Epuisé" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "actions",
+            "patterns": [ "Tu fais quoi ?", "ça va ?", "Quoi de neuf ?" ],
+            "responses": [ "Pas grand chose", "Je lis", "J'écris", "Je mange", "Je joue", "Je prend l'air", "Je travaille", "J'écoute de la musique" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "ressentis",
+            "patterns": [ "Tu as mal quelque part ?", "Comment tu te sens ?" ],
+            "responses": [ "Toujours mal au même endroit", "Non ça va merci", "J'ai super mal", "Je me sens pas bien", "J'ai une douleur dans le bas du corps", "J'ai une douleur dans le haut du corps", "J'ai mal à la tête" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "actualités",
+            "patterns": [ "Tu as vu l'actualité ?", "Tu as vu ce qu'il s'est passé à la télé ?" ],
+            "responses": [ "J'ai vu, c'est incroyable", "Non, explique-moi", "Non je n'ai pas eu le temps", "Oui, c'est triste", "Oui c'est super !", "Oui, tu en penses quoi ?" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "journée",
+            "patterns": [ "Qu'as-tu prévu de faire aujourd'hui ?", "Quel est ton programme pour aujourd'hui ?", "Tu vas faire quoi aujourd'hui ?", "Quoi de prévu pour aujourd'hui ?" ],
+            "responses": [ "Sortir dehors, il fait beau", "Rester dedans, il fait pas beau", "Rien de spécial", "J'ai un rendez-vous médical", "Je dois travailler", "J'ai des visites", "Je ne sais pas encore", "Pas encore décidé pour le moment", "Pas grand chose" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "retours",
+            "patterns": [ "Et toi, tu en penses quoi ?", "Et toi ?" ],
+            "responses": [ "Pareil que toi", "Je suis totalement d'accord avec toi", "A l'inverse de toi", "Je ne suis pas du tout d'accord", "Je ne sais pas", "Je n'ai pas d'avis" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "rendez-vous",
+            "patterns": [ "Tu vas où aujourd'hui ?", "Qui dois-tu voir aujourd'hui ?", "Où as-tu rendez-vous ?" ],
+            "responses": [ "Médecin", "Pharmacie", "Hôpital", "Ergothérapeute", "Kiné", "Psychologue", "Centre", "Chez mes parents", "Chez mes enfants" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "incompréhension",
+            "patterns": [ "" ],
+            "responses": [ "L'ordinateur n'a pas compris", "Peux-tu reformuler s'il-te-plaît ?", "Peux-tu répéter s'il-te-plaît ?" ],
+            "context": [ "" ]
+        },
+	{
+	 "tag": "Météo",
+	 "patterns": ["Tu as vu la météo ?","Quel temps fait-il ?","Que penses tu de la météo ?"],
+	 "responses": ["Il fait beau","Il fait mauvais","Il y a du vent", "J'aime le temps qu'il fait"],
+	 "context": [""]
+	},
+	{
+	 "tag": "Beau temps",
+	 "patterns": ["Tu as vu le soleil dehors ?","Tu as vu, il fait très beau !","Le temps est agréable tu ne trouves pas ?","Il fait beau aujourd'hui"],
+	 "responses": ["Oui, il fait très beau","J'aimerai aller prendre l'air","Il fait trop chaud","J'aime le temps qu'il fait"],
+	 "context": [""]
+	},
+	{
+	 "tag": "Mauvais temps",
+	 "patterns": ["Il fait un sale temps","Le temps est mauvais","Il pleut encore"],
+	 "responses": ["J'aime bien la pluie","C'est un temps à rester chez soi","Je n'aime pas ce temps", "Le temps est désagrable en ce moment"],
+	 "context": [""]
+	},
+	{
+	 "tag": "Temps chaud",
+	 "patterns": ["Tu ne trouves pas qu'il fait chaud ?","Il fait bon à l'ombre","Le soleil est fort aujourd'hui"],
+	 "responses": ["Peux-tu ouvrir la fenêtre","Il faut faire attention aux coups de soleil","La température est agréable"],
+	 "context": [""]
+	},
+	{
+	 "tag": "Temps froid",
+	 "patterns": ["Il fait froid dehors","Nous sommes encore en hiver","N'as tu pas froid ?"],
+	 "responses": ["Il fait froid","Peux tu allumer le radiateur ?"],
+	 "context": [""]
+	},
+	{
+	 "tag": "Tempête",
+	 "patterns": ["Tu as vu le vent dehors ?","Ils annoncent de l'orage","Il fait très mauvais dehors"],
+	 "responses": ["Il va y avoir une tempête","Il fait très mauvais temps","Il vaut mieux ne pas sortir aujourd'hui"],
+	 "context": [""]
+	},
+	{
+	 "tag": "Température",
+	 "patterns": ["Tu n'as pas chaud ?","Tu n'as pas froid ?"],
+	 "responses": ["Non je n'ai pas chaud","Oui j'ai chaud","Non je n'ai pas froid","Oui j'ai froid","La température est parfaite"],
+	 "context": [""]
+	},
+	{
+	 "tag": "Santé",
+	 "patterns": ["Comment va la santé ?","Comment te sens tu ?"],
+	 "responses": ["Ca va super merci","Je ne suis pas au top en ce moment","Rien à signaler","Je ne me sens pas bien","Je ne suis pas bien"],
+	 "context": [""]
+	},
+	{
+	 "tag": "Fièvre",
+	 "patterns": ["As tu de la fièvre ? ","As tu mal à la tête ?"],
+	 "responses": ["J'ai de la fièvre","Je n'ai pas de fièvre","J'ai mal à la tête","Je n'ai pas mal à la tête"],
+	 "context": [""]
+	},
+	{
+	 "tag": "Sports",
+	 "patterns": ["Quels sports suis tu ?","Que regardes tu comme sport ?", "Tu regardes du sport en ce moment"],
+	 "responses": ["Le foot","Le tennis","Le rugby","Le basket","Le cyclisme"],
+	 "context": [""]
+	},
+	{
+	 "tag": "Eau",
+	 "patterns": ["As tu soif ?","Veux tu boire ?","Veux tu de l'eau ?", "As tu besoin d'un verre d'eau"],
+	 "responses": ["Oui j'ai soif","Non je n'ai pas soif"],
+	 "context": [""]
+	},
+	{
+	 "tag": "TV",
+	 "patterns": ["Veux tu que j'allume la télé ?","Veux tu regarder la télé ?","Tu veux que j'allume la télévision ?","Tu veux regarder la télévision ?"],
+	 "responses": ["Baisse le son s'il te plait","Augmente le volume s'il te plait","Allume la télévision s'il te plait", "Eteint la télé s'il te plait"],
+	 "context": [""]
+	},
+	{
+	 "tag": "Radio",
+	 "patterns": ["Veux tu que j'allume la radio ?","Veux tu écouter la radio ?"],
+	 "responses": ["Change de fréquence s'il te plait","Allume la radio s'il te plait","Eteint la radio s'il te plait"],
+	 "context": [""]
+	},
+	{
+	 "tag": "Musique",
+	 "patterns": ["Veux tu que je mette de la musique ?","Veux tu écouter de la musique ?"],
+	 "responses": ["Je voudrais écouter de la musique","Change de musique","Peux tu couper la musique s'il te plait ?"],
+	 "context": [""]
+	},
+	{
+	 "tag": "Informations TV",
+	 "patterns": ["Veux tu regarder les information à la télé ?","Veux tu que j'allume la télé pour mettre les informations ?"],
+	 "responses": ["Je voudrais regarder les informations","Peux tu changer de chaine pour mettre les informations ?"],
+	 "context": [""]
+	},
+	{
+	 "tag": "Lecture",
+	 "patterns": ["Que lis tu en ce moment ?","Tu as fini ton dernier roman ?","Tu as lu les informations ?","Tu as lu le journal ?"],
+	 "responses": ["Je lis un roman","Je lis les informations","Je voudrais un nouveau livre"],
+	 "context": [""]
+	},
+	{
+	 "tag": "Series",
+	 "patterns": ["Veux tu regarder une série ?","Tu as regardé une série recemment ?"],
+	 "responses": ["Je voudrais regarder une nouvelle série","Je continue ma série","J'ai fini ma série"],
+	 "context": [""]
+	},
+	{
+	 "tag": "Vacances",
+	 "patterns": ["Veux tu que je te raconte mes dernières vacances ?","Ou aimerais tu voyager ?"],
+	 "responses": ["Raconte moi tes dernières vacances s'il te plait","Comment se sont passé tes dernières vacances ?"],
+	 "context": [""]
+	},
+	{
+	 "tag": "Lumière",
+	 "patterns": ["Veux tu que j'ouvre les stores ?","Veux tu que j'ouvre les rideaux ?", "Veux tu que j'allume la lumière ?","Veux tu que je ferme les rideaux ?","Veux tu que je ferme les stores ?", "Veux tu que j'éteigne la lumière ?"],
+	 "responses": ["Oui, il fait sombre","Il y a trop de lumière","Il n'y a pas assez de lumière"],
+	 "context": [""]
+	},
+	{
+	 "tag": "chauffage",
+	 "patterns": ["Veux tu que j'allume le radiateur ?","Veux tu que j'allume la clim ?","Veux tu que j'allume la climatisation ?","Tu n'as pas froid ?", "Tu n'as pas chaud ?"],
+	 "responses": ["Oui, j'ai froid","Non, j'ai froid","Oui, j'ai chaud","Non, j'ai chaud","Je n'ai ni chaud ni froid"],
+	 "context": [""]
+	}
+    ]
+}
