@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="pretraitement.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:pretraitement"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel x:Name="Navigation" Orientation="Horizontal" VerticalAlignment="Top" Height="55" HorizontalAlignment="Center" Width="1278">
+
+            <Button x:Name="btn_parler" Content="Parler" Width="122" HorizontalContentAlignment="Center" Padding="0,0,0,0" Height="55.33" FontSize="36" FontFamily="Arial" Click="btn_parler_Click" Background="#FF007AFF" BorderBrush="Transparent" FocusVisualPrimaryBrush="Black" Foreground="White"/>
+
+            <Button x:Name="btn_urgences" Content="Urgences" Background="#FFFF1D00" BorderBrush="Red" Margin="1000,0,0,0" FontFamily="Arial" FontSize="36" Width="160" Padding="0,0,0,0" VerticalContentAlignment="Center"  UseLayoutRounding="True" Height="55.33" HorizontalContentAlignment="Center" Foreground="White">
+                <Button.Flyout>
+                    <MenuFlyout>
+                        <MenuFlyoutItem Text="Je me sens pas bien" Click="btn_urgence1_Click"/>
+                        <MenuFlyoutItem Text="J'ai mal" Click="btn_urgence2_Click"/>
+                        <MenuFlyoutItem Text="Je suis bloqué" Click="btn_urgence3_Click"/>
+                    </MenuFlyout>
+                </Button.Flyout>
+            </Button>
+
+            <Button x:Name="btn_reglages" Height="55.33" Margin="-250,0,0,0" Padding="0,0,0,0" Width="88" Click="btn_reglages_Click" FocusVisualPrimaryBrush="Black" Background="White">
+                <Image x:Name="img_btn_reglages" Source="/Assets/reglagesok.jpg"/>
+            </Button>
+
+            <Button x:Name="btn_clavier" Height="55.33" Margin="-340,0,0,0" Padding="0,0,0,0" Width="88" Click="btn_clavier_Click" FocusVisualPrimaryBrush="Black" Background="White">
+                <Image x:Name="img_btn_clavier" Source="/Assets/clavier.Png"/>
+            </Button>
+
+        </StackPanel>
+
+        <ListView x:Name="STT" Margin="10,83,10,411" BorderBrush="White" BorderThickness="1,1,1,1" IsItemClickEnabled="True" ItemClick="btn_liste_Click" SelectionMode="None">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <ItemsStackPanel ItemsUpdatingScrollMode="KeepLastItemInView" Orientation="Horizontal" CacheLength="50"/>
+
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+        </ListView>
+        <Image x:Name="monNuag2" Margin="-125,0,435,-88" Source="/Assets/nuageok.png" Height="491" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="9.434"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="monNuage1" Margin="449,0,-192,-81" Source="/Assets/nuageok.png" Height="491" VerticalAlignment="Bottom"/>
+
+
+
+        <Button x:Name="btnNuage4" Content="" Margin="72,590,0,0" VerticalAlignment="Top" Foreground="Green" Background="Transparent" FontSize="23" Click="btn_nuage1_Click" RenderTransformOrigin="-0.022,0.492" />
+        <Button x:Name="btnNuage1" Content="" Margin="72,383,0,0" VerticalAlignment="Top" Foreground="Green" Background="Transparent" FontSize="23" Click="btn_nuage2_Click" RenderTransformOrigin="0,0.481"/>
+        <Button x:Name="btnNuage3" Content="" Margin="72,521,0,0" VerticalAlignment="Top" Foreground="Green" Background="Transparent" FontSize="23" Click="btn_nuage3_Click" RenderTransformOrigin="-0.022,0.504"/>
+        <Button x:Name="btnNuage6" Content="" Margin="693,383,0,0" VerticalAlignment="Top" Foreground="Green" Background="Transparent" FontSize="23" Click="btn_nuage4_Click" RenderTransformOrigin="-0.01,0.506"/>
+        <Button x:Name="btnNuage7" Content="" Margin="693,453,0,0" VerticalAlignment="Top" Foreground="Green" Background="Transparent" FontSize="23" Click="btn_nuage5_Click"/>
+        <Button x:Name="btnNuage8" Content="" Margin="693,521,0,0" VerticalAlignment="Top" Foreground="Green" Background="Transparent" FontSize="23" Click="btn_nuage6_Click"/>
+        <Button x:Name="btnNuage2" Content="" Margin="72,453,0,0" VerticalAlignment="Top" Foreground="Green" Background="Transparent" FontSize="23" Click="btn_nuage7_Click" RenderTransformOrigin="0,0.519"/>
+        <Button x:Name="btnNuage5" Content="" Margin="693,314,0,0" VerticalAlignment="Top" Foreground="Green" Background="Transparent" FontSize="23" Click="btn_nuage8_Click" RenderTransformOrigin="-0.017,0.492"/>
+        <Button x:Name="btnNuage9" Content="" Margin="693,590,0,0" VerticalAlignment="Top" Foreground="Green" Background="Transparent" FontSize="23" Click="btn_nuage9_Click"/>
+
+        <Button x:Name="btnNuage10" Content="Oui" Margin="72,313,0,0" Foreground="Green" Background="Transparent" FontSize="23" Click="btn_nuage10_Click" RenderTransformOrigin="-0.075,-0.283" Height="43" Width="56" VerticalAlignment="Top"/>
+        <Button x:Name="btnNuage11" Content="Non" Margin="0,314,1019,0" VerticalAlignment="Top" Foreground="Green" Background="Transparent" FontSize="23" Click="btn_nuage11_Click" RenderTransformOrigin="1.065,-0.443" Height="43" HorizontalAlignment="Right"/>
+        <Button x:Name="btnNuage12" Content="Merci" Margin="0,313,896,0" VerticalAlignment="Top" Foreground="Green" Background="Transparent" FontSize="23" Click="btn_nuage11_Click" RenderTransformOrigin="1.065,-0.443" Height="43" HorizontalAlignment="Right"/>
+
+    </Grid>
+</Page>
