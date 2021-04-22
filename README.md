@@ -5,7 +5,7 @@ Projet de fin d'études réalisé par Elisa Crespy, Julie Sazerat et Julia Husso
 
 Projet en partenariat avec l'école d'Ingénieurs ESME Sudria, l'association ALIS et l'entreprise Microsoft. 
 
-Objectif : développer une soluion de CAA, basée sur des techniques d'IA, afin de faciliter la communication entre
+Objectif : développer une solution de CAA, basée sur des techniques d'IA, afin de faciliter la communication entre
 une personne LIS (Locked-In Syndrome) et son interlocuteur. 
 
 Dernière dépôt de la première version de l'application : 22/04/21.  
